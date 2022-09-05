@@ -1,0 +1,14 @@
+[package]
+name = "pltest"
+version = "0.1.0"
+edition = "2021"
+authors = ['Miiao']
+
+[dependencies]
+unmem = "0.2.6"
+
+[profile.release]
+strip = true
+codegen-units = 1
+lto = true
+opt-level = 'z'
